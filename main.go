@@ -5,12 +5,13 @@ import (
 )
 
 func superAdd(numbers ...int) int {
-	for index, number := range numbers {
-		fmt.Println(index, number)
+	total := 0
+	for _, number := range numbers {
+		total += number
 	}
-	return 0
+	return total
 }
 
 func main() {
-	superAdd(1, 3, 5, 7, 9)
+	fmt.Println(superAdd(1, 3, 5, 7, 9))
 }
