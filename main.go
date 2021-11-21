@@ -3,11 +3,15 @@ package main
 import (
 	"fmt"
 
-	"github.com/unsu0707/learn-golang/banking"
+	"github.com/unsu0707/learn-golang/mydict"
 )
 
 func main() {
-	account := banking.NewAccount("unsu")
-	account.Deposit(1000)
-	fmt.Println(account)
+	dictionary := mydict.Dictionary{"first": "First Word"}
+	definition, err := dictionary.Search("second")
+	if err != nil {
+		fmt.Println(err)
+	} else {
+		fmt.Println(definition)
+	}
 }
