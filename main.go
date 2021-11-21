@@ -6,5 +6,7 @@ import (
 
 func main() {
 	user := map[string]string{"name": "unsu", "age": "31"}
-	fmt.Println(user)
+	for key, value := range user {
+		fmt.Println(key, value)
+	}
 }
