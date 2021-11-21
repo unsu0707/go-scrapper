@@ -5,9 +5,6 @@ import (
 )
 
 func main() {
-	a := 2
-	b := &a
-	a = 50
-	*b = 100
-	fmt.Println(a, *b)
+	names := [5]string{"aaa", "bbb", "ccc"}
+	fmt.Println(names)
 }
