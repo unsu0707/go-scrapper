@@ -12,5 +12,5 @@ type user struct {
 
 func main() {
 	user1 := user{"unsu", 20, []string{"yakiniku", "ramen"}}
-	fmt.Println(user1)
+	fmt.Println(user1.name + " is your name")
 }
